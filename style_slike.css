@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body {
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a.image-popup-vertical-fit {
+  cursor: -webkit-zoom-in;
+}
+
+.img-gallery-magnific {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.magnific-img {
+  width: 30%;
+  min-width: 250px;
+}
+
+.magnific-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.magnific-img img:hover {
+  transform: scale(1.03);
+}
+
+.magnific-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .magnific-img img {
+    transition: all 0.3s ease;
+  }
+  
+  .magnific-img:hover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+  
+
+
+
+.galerija h1 {
+
+  color: darkblue;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.galerija_slika {
+  width: 25%;
+  min-width: 250px;
+  position: relative;
+}
+
+.galerija_slika img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.galerija_slika img:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(145, 145, 145, 0.7);
+  border-radius: 10px;
+  pointer-events: none;
+  scale: 1.03;
+}
+
+.galerija_slika:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.lightbox:target {
+  display: flex;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+@media (max-width: 1024px) {
+  .galerija_slika {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .galerija_slika {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+ .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

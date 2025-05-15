@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+	<html lang="hr">
+	<head>
+		<title>Movie page</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="This page shows data on movies">
+		<meta name="keywords" content="movies, html, css, data">
+		<meta name="author" content="Luka Jurkic">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Welcome to movie web page</h1>
+		</header>
+		<header>
+    	<nav aria-labelledby="primarna-navigacija">
+			<div class="dropdown">
+				<h2 id="primarna-navigacija">Navigacija</h2>
+				<div aria-label="dropdown-navigation" class="dropdown-content">
+					<a href="./index.html">Pocetna</a>
+					<a href="./slike.html">Galerija slika</a>
+					<a href="./graph.html">Graf</a>
+					<a href="lv4.php">LV4</a>
+				</div>
+			</div>
+        </nav>
+        </header>
+
+<div class="table-with-image">
+	<section>
+		<h1>Popis Filmova</h1>
+		<table id="movies">
+			<tr>
+				<th>ID</th>
+				<th>Naslov</th>
+				<th>Godina</th>
+				<th>Žanr</th>
+				<th>Trajanje</th>
+				<th>Država</th>
+				<th>Ocjena</th>
+			</tr>
+			<tr><td>2</td><td>Bugs Bunny's Third Movie</td><td>1982</td><td>Animacija</td><td>76</td><td>SAD</td><td>7.7</td></tr>
+			<tr><td>3</td><td>18 anni tra una settimana</td><td>1991</td><td>Drama</td><td>98</td><td>Italija</td><td>6.5</td></tr>
+			<tr><td>17</td><td>Ride a Wild Pony</td><td>1976</td><td>Romantični</td><td>91</td><td>SAD</td><td>5.7</td></tr>
+			<tr><td>18</td><td>Diner</td><td>1982</td><td>Komedija</td><td>95</td><td>SAD</td><td>7.0</td></tr>
+			<tr><td>20</td><td>A che servono questi quattrini?</td><td>1942</td><td>Komedija</td><td>85</td><td>Italija</td><td>5.9</td></tr>
+			<tr><td>22</td><td>A ciascuno il suo</td><td>1967</td><td>Drama</td><td>93</td><td>Italija</td><td>7.6</td></tr>
+			<tr><td>23</td><td>Dead-Bang</td><td>1989</td><td>Krimić</td><td>109</td><td>SAD</td><td>6.0</td></tr>
+			<tr><td>24</td><td>A... come assassino</td><td>1966</td><td>Triler</td><td>80</td><td>Italija</td><td>5.2</td></tr>
+			<tr><td>26</td><td>At Close Range</td><td>1986</td><td>Drama</td><td>115</td><td>SAD</td><td>7.5</td></tr>
+			<tr><td>30</td><td>A Ghentar si muore facile</td><td>1968</td><td>Avantura</td><td>101</td><td>Italija</td><td>4.8</td></tr>
+			<tr><td>32</td><td>Sleeping with the Enemy</td><td>1990</td><td>Drama</td><td>96</td><td>SAD</td><td>5.0</td></tr>
+			<tr><td>34</td><td>In Bed With Madonna</td><td>1990</td><td>Dokumentarni</td><td>111</td><td>SAD</td><td>5.3</td></tr>
+			<tr><td>36</td><td>Bowery at Midnight</td><td>1942</td><td>Horor</td><td>62</td><td>SAD</td><td>5.1</td></tr>
+			<tr><td>37</td><td>A mezzanotte va la ronda del piacere</td><td>1975</td><td>Komedija</td><td>100</td><td>Italija</td><td>5.8</td></tr>
+			<tr><td>38</td><td>Mr. Majestyk</td><td>1974</td><td>Akcija</td><td>105</td><td>SAD</td><td>6.2</td></tr>
+			<tr><td>45</td><td>Warning Sign</td><td>1985</td><td>Akcija</td><td>99</td><td>SAD</td><td>4.8</td></tr>
+			<tr><td>47</td><td>About Last Night</td><td>1986</td><td>Komedija</td><td>113</td><td>SAD</td><td>5.9</td></tr>
+			<tr><td>49</td><td>Fail-Safe</td><td>1964</td><td>Drama</td><td>110</td><td>SAD</td><td>8.2</td></tr>
+			<tr><td>51</td><td>Some Like It Hot</td><td>1959</td><td>Komedija</td><td>120</td><td>SAD</td><td>9.1</td></tr>
+		</table>
+	</section>
+
+    <aside>
+		<h2>Top Movie by IMDB</h2>
+        <picture>
+			<source srcset="./img/image1.webp" media="(min-width: 769px)">
+			<img src="./img/image2.jpg" alt="Movie Poster" style="max-width: 100%;">
+		</picture>
+    </aside>
+</div>
+
+		
+		
+		<section> <!-- dodati n class="side-image"eke od obilježja za ARIA-->
+			<h2>Ovo je glavna sekcija</h2>
+			<p>HTML5 omogucava semanticku strukturu koja poboljsava pristupacnost i SEO.</p>
+
+		</section>
+			<!-- dodati jedan aside na desnoj strani s ugrađenom google mapom/filmom ili slično-->
+		<article>
+			<h2>Najnovije vijesti</h2>
+			<p>Ovdje se nalazi clanak s vaznim informacijama.</p>
+		</article>
+		
+
+		<!--dodati odgovarajuće elemente na temelju danog zadatka: tablice, slike, tekst
+		Nepotrebno obrisati! -->
+		<footer>
+		<p>&copy; 2025. Web Programiranje. Sva prava pridrzana.</p>
+		</footer>
+	</body>
+	</html>

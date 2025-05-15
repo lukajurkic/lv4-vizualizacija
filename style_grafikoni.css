@@ -1,0 +1,131 @@
+body {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("image2.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+body {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("image1.webp");
+}
+}
+
+/* Header i navigacija */
+header {
+    background: transparent;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.pie-chart {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #ff5733 0% 15%,  /* Action - 15% */
+        #33ff57 15% 30%, /* Comedy - 15% */
+        #3357ff 30% 45%, /* Drama - 15% */
+        #ff33a1 45% 55%, /* Thriller - 10% */
+        #a133ff 55% 65%, /* Horror - 10% */
+        #33fff6 65% 72%, /* Sci-Fi - 7% */
+        #ffb733 72% 79%, /* Romance - 7% */
+        #8a8a8a 79% 85%, /* Mystery - 6% */
+        #b7ff33 85% 91%, /* Documentary - 6% */
+        #ff3385 91% 100% /* Animation - 9% */
+    );
+    position: relative;
+    transform: scale(0); /* Start from 0 */
+    opacity: 0; /* Hidden initially */
+    animation: showPie 1.5s ease-in-out forwards; /* Animation applied */
+}
+
+/* Animation for progressive appearance */
+@keyframes showPie {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.legend {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.legend div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+/* Colors matching the chart */
+.action { background: #ff5733; }
+.comedy { background: #33ff57; }
+.drama { background: #3357ff; }
+.thriller { background: #ff33a1; }
+.horror { background: #a133ff; }
+.scifi { background: #33fff6; }
+.romance { background: #ffb733; }
+.mystery { background: #8a8a8a; }
+.documentary { background: #b7ff33; }
+.animation { background: #ff3385; }
